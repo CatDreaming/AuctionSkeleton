@@ -1,0 +1,13 @@
+//File Auction.IDL
+
+module AuctionApp{
+	interface Auction{
+		boolean offer_item_0(in string userId, in string itemDescription_val);
+		boolean offer_item_1(in string userId, in string itemDescription_val, in double initialPrice_val);
+		string view_high_bidder();
+		boolean sell(in string userId);
+		string view_auction_status(in string userId);
+		boolean bid(in string userId, in double bidPrice);
+		boolean view_bid_status(in string userId);
+	};
+};
